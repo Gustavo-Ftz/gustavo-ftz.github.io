@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(8, 28, 41), rgb(12, 32, 45), rgb(16, 36, 49), rgb(20, 40, 53), rgb(24, 44, 57));
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;    
+    font-weight: bolder;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+header > nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header > nav > ul > li > a {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > ul > li > a:hover {
+    border-bottom: 2px solid #0aa7ed;
+}
+
+main {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+}
+
+main > section > h2 {
+    font-size: 40px;
+}
+
+main > section > h3 {
+    font-size: 30px;
+    color: #0aa7ed;
+}
+
+main > section {
+    margin-top: 26px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+main > section > div.infoContactGmail {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > section > div.infoContactGmail > img {
+    border-radius: 8px;
+}
+
+main > section > div.infoContactInstagram {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    gap: 8px;
+}
+
+footer {
+    background-color: rgb(2, 14, 22);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header > nav > ul {
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
